@@ -1,0 +1,49 @@
+:root{
+  --purple: #682444;
+  --white: #ffffff;
+  --max-width: 1100px;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4;margin:0;color:#222;background:var(--white)}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 1rem}
+
+/* Skip link */
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:var(--purple);color:var(--white);padding:.5rem;border-radius:4px}
+
+/* Header */
+.site-header{position:fixed;inset:0 0 auto 0;background:var(--white);border-bottom:1px solid #eee;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0}
+.brand{font-weight:700;color:var(--purple);text-decoration:none;font-size:1.1rem}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.main-nav a{color:#333;text-decoration:none;padding:.25rem .5rem}
+
+/* Hero */
+.hero{padding:6rem 0 3rem;background:linear-gradient(180deg, rgba(104,36,68,.06), transparent)}
+.hero-inner{padding-top:2rem}
+.hero h1{color:var(--purple);margin:0 0 .5rem;font-size:clamp(1.5rem,3.5vw,2.5rem)}
+.hero p{max-width:60ch;color:#333}
+.hero-ctas{margin-top:1rem;display:flex;gap:.75rem}
+
+/* Panels */
+.panel{padding:3rem 0;border-top:1px solid #f3f3f3}
+.panel.alt{background:#fbfbfb}
+.panel h2{color:var(--purple);margin-top:0}
+
+/* Buttons */
+.btn{display:inline-block;background:var(--purple);color:var(--white);padding:.6rem .9rem;border-radius:6px;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--purple);border:2px solid var(--purple)}
+.btn.primary{background:var(--purple)}
+
+/* Footer */
+.site-footer{border-top:1px solid #eee;padding:2rem 0;margin-top:2rem;background:var(--white)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+.footer-links{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.footer-links a{text-decoration:none;color:#333}
+
+/* Responsive */
+@media (max-width:720px){
+  .main-nav ul{display:none}
+  .hero{padding:5rem 0 2rem}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+}
