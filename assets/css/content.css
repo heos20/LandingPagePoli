@@ -1,19 +1,19 @@
-/* Content-specific styles: about, programs, testimonials, ctas */
-.lead{font-size:1.05rem;max-width:70ch;color:var(--color-text);margin-bottom:1rem}
-.differentiators{list-style:disc;margin-left:1.25rem}
-.differentiators li{margin:0.5rem 0}
+/* Content-specific styles: about, programs, testimonials, ctas (minimal, modern) */
+.lead{font-size:1.05rem;max-width:72ch;color:var(--color-muted);margin-bottom:1.25rem}
+.differentiators{list-style:disc;margin-left:1.25rem;color:var(--color-muted)}
+.differentiators li{margin:0.6rem 0}
 
 .program-list{list-style:none;padding:0;margin:0}
-.program-list li{padding:.5rem 0;border-bottom:1px solid rgba(0,0,0,0.04)}
+.program-list li{padding:0.75rem 0;border-bottom:1px solid rgba(17,18,20,0.04);color:var(--color-muted)}
 
-.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.testimonial-card{background:var(--color-surface);padding:1rem;border-radius:8px}
-.testimonial-card .quote{font-style:italic;margin-bottom:.5rem}
-.testimonial-card .author{font-weight:700;font-size:.95rem}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.testimonial-card{background:var(--color-bg);padding:1.25rem;border-radius:var(--soft-radius);border:1px solid rgba(17,18,20,0.04);box-shadow:0 6px 20px rgba(17,18,20,0.03)}
+.testimonial-card .quote{font-style:italic;margin-bottom:.75rem;color:var(--color-muted)}
+.testimonial-card .author{font-weight:700;font-size:0.95rem;color:var(--color-text)}
 
-.cta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1rem}
-.cta-item{background:transparent;padding:1rem;border-radius:8px;border:1px solid rgba(0,0,0,0.04);text-align:center}
-.cta-item h3{margin-top:0;color:var(--color-primary)}
+.cta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.25rem}
+.cta-item{background:transparent;padding:1.25rem;border-radius:10px;border:1px solid rgba(17,18,20,0.04);text-align:center}
+.cta-item h3{margin-top:0;color:var(--color-text);font-weight:700}
 
 @media (max-width:900px){
   .testimonials-grid{grid-template-columns:1fr}
