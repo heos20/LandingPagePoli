@@ -1,12 +1,16 @@
 <!doctype html>
 <html lang="es">
-  <head>
+    <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Instituto Politécnico Nacional — formación técnica y vinculación industrial. Programas para estudiantes, profesionales y empleadores." />
     <title>IPN — Landing</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/content.css">
-  </head>
+    </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
 
@@ -27,11 +31,33 @@
     <main id="main">
       <section class="hero" id="hero">
         <div class="container hero-inner">
-          <h1>Formación técnica ligada a la industria</h1>
-          <p>Programas, prácticas profesionales y formación continua diseñados para impulsar carreras y conexiones laborales.</p>
-          <div class="hero-ctas">
-            <a class="btn primary" href="#estudiantes">Solicita información</a>
-            <a class="btn ghost" href="#padres">Guía para padres</a>
+          <div class="hero-grid">
+            <div class="hero-left">
+              <h1>Formación técnica ligada a la industria</h1>
+              <p class="lead">Programas, prácticas profesionales y formación continua diseñados para impulsar carreras y conexiones laborales.</p>
+              <div class="hero-ctas">
+                <a class="btn primary" href="#estudiantes">Solicita información</a>
+                <a class="btn ghost" href="#padres">Guía para padres</a>
+              </div>
+            </div>
+            <div class="hero-right" aria-hidden="true">
+              <!-- Decorative SVG shape to add visual interest -->
+              <svg width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <defs>
+                  <linearGradient id="g1" x1="0" x2="1">
+                    <stop offset="0" stop-color="#8c3250" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="#5a1833" stop-opacity="0.85"/>
+                  </linearGradient>
+                </defs>
+                <rect rx="18" width="320" height="220" fill="url(#g1)" />
+                <circle cx="260" cy="40" r="36" fill="#ffdca8" opacity="0.12" />
+                <g fill="#fff" opacity="0.12">
+                  <rect x="28" y="40" width="80" height="8" rx="4"/>
+                  <rect x="28" y="60" width="120" height="8" rx="4"/>
+                  <rect x="28" y="80" width="60" height="8" rx="4"/>
+                </g>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
